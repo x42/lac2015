@@ -1635,12 +1635,8 @@ The exhibition is open from 14:00 to 18:00 every day of the conference.
           # TODO Lightning talks...
           if ($d['starttime'] == '9:00')
             $c['cskip']=2;
-          if ($d['starttime'] == '9:30')
-            $c['cskip']=1;
           else if (substr($d['title'],0,6) == 'LUNCH ')
-            $c['cskip']=3;
-          else if ($d['starttime'] == '11:30' && $day==2 && $d['type'] == 'w')
-            $c['cskip']=6;
+            $c['cskip']=4;
           else
             $c['cskip']=ceil($d['duration']/15);
 
