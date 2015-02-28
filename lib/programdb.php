@@ -60,16 +60,8 @@
     $rv.='<tr>';
     $rv.='<td class="trX" colspan="3">Legend</td>';
     $rv.='</tr><tr>';
-    $rv.='<td class="tr1">'.track_name('tr1').'</td>';
-    $rv.='<td class="tr2">'.track_name('tr2').'</td>';
-    $rv.='<td class="tr6">'.track_name('tr6').'</td>';
-    $rv.='</tr><tr>';
-    $rv.='<td class="tr4">'.track_name('tr4').'</td>';
-    $rv.='<td class="tr5">'.track_name('tr5').'</td>';
+    $rv.='<td class="tr0">'.track_name('tr0').'</td>';
     $rv.='<td class="trl">'.track_name('trl').'</td>';
-    $rv.='</tr><tr>';
-    $rv.='<td class="tr7">'.track_name('tr7').'</td>';
-    $rv.='<td class="tr3">'.track_name('tr3').'</td>';
     $rv.='<td class="trp">'.track_name('trp').'</td>';
     $rv.='</tr><tr>';
     $rv.='<td></td>';
@@ -83,20 +75,12 @@
   function track_name($tr) {
     # XXX - hardcoded session/track XXX
     switch ($tr) {
-      case 'tr1': return 'Audio and Web';
-      case 'tr2': return 'Tools to make Tools';
-      case 'tr3': return 'SurSound and Ambisonics';
-      case 'tr4': return 'Music Programming';
-      case 'tr5': return 'Interfaces and Hardware';
-      case 'tr6': return 'Live Coding';
-      case 'tr7': return 'Licensing';
+      case 'tr0': return 'Paper Presentation';
       case 'trp': return 'Poster Session';
       case 'trl': return 'Lightning Talk';
       case 'trw': return 'Workshop';
       case 'tro': return 'Miscellaneous';
       case 'trm': return 'Concert';
-      case 'trmK': return 'Kubus Concert';
-      case 'trmL': return 'Lounge Concert';
       case 'trmS': return 'Sound Night';
       default: return '';
     }
@@ -106,25 +90,14 @@
     if (substr($d['title'],0,7) == 'COFFEE ') return 'trz';
     if (substr($d['title'],0,6) == 'LUNCH ') return 'trz';
     if ($d['title'] == 'Poster Session') return 'trp';
-    if ($d['day'] == 2 && $d['type'] == 'l') return 'trl';
+    if (($d['day'] == 1 || $d['day'] == 2) && $d['type'] == 'l') return 'trl';
     if ($d['day'] == 4) return 'trz';
     if ($d['type'] == 'w') return 'trw';
-    if ($d['type'] == 'c' && $d['starttime'] == '20:00') return 'trmK';
-    if ($d['type'] == 'c' && $d['starttime'] == '22:00' && $d['day'] == 2) return 'trmL';
     if ($d['type'] == 'c' && $d['starttime'] == '22:00' && $d['day'] == 3) return 'trmS';
     if ($d['type'] == 'c') return 'trm';
     if ($d['type'] == 'i') return 'tri';
     if ($d['type'] == 'v') return 'trp';
     if ($d['type'] != 'p') return 'tro';
-    switch ($d['track']) {
-      case 1: return 'tr1';
-      case 2: return 'tr2';
-      case 3: return 'tr3';
-      case 4: return 'tr4';
-      case 5: return 'tr5';
-      case 6: return 'tr6';
-      case 7: return 'tr7';
-    }
     return 'tr0';
   }
 
@@ -1581,9 +1554,8 @@ The exhibition is open from 14:00 to 18:00 every day of the conference.
       $a_times = array(
                       '9:00' => '9:00', '9:30' => '9:30'
                     , '10:00' => '10:00' , '10:15' => '10:15', '10:30' => '10:30', '10:45' => '10:45'
-                    , '11:00' => '11:00' , '11:15' => '11:15', '11:30' => '11:30'
-                    , '11:40' => '11:40' , '11:50' => '11:50'
-                    , '12:00' => '12:00' , '12:10' => '12:10' , '12:20' => '12:20'
+                    , '11:00' => '11:00' , '11:15' => '11:15', '11:30' => '11:30', '11:45' => '11:45'
+                    , '12:00' => '12:00' , '12:15' => '12:15'
                     , '12:30' => '12:30'
                     , '13:00' => '13:00' , '13:30' => '13:30'
                     , '14:00' => '14:00' , '14:15' => '14:15', '14:30' => '14:30', '14:45' => '14:45'
@@ -1701,27 +1673,23 @@ The exhibition is open from 14:00 to 18:00 every day of the conference.
     if ($day == 1) {
       echo '<tr onmouseover="this.className=\'highlight\'" onmouseout="this.className=\'normal\'">';
       echo '<th class="ptb">20:00</th>';
-      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>Opening Concert (&asymp;90mins) &raquo; Kubus</span></td>';
+      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>Opening Concert: Space/ Landscape of Sound (&asymp;90mins) &raquo; Roter Saal</span></td>';
       echo '</tr>'."\n";
     }
     else if ($day == 2) {
       echo '<tr onmouseover="this.className=\'highlight\'" onmouseout="this.className=\'normal\'">';
       echo '<th class="ptb">20:00</th>';
-      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>IMA Concert (&asymp;105mins) &raquo; Kubus</span></td>';
-      echo '</tr>'."\n";
-      echo '<tr onmouseover="this.className=\'highlight\'" onmouseout="this.className=\'normal\'">';
-      echo '<th class="ptb">22:00</th>';
-      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>Listening Session (&asymp;90mins) &raquo; Balcony/Lounge</span></td>';
+      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>IMA Concert: Time / Sound Machines (&asymp;105mins) &raquo; Roter Saal</span></td>';
       echo '</tr>'."\n";
     }
     else if ($day == 3) {
       echo '<tr onmouseover="this.className=\'highlight\'" onmouseout="this.className=\'normal\'">';
       echo '<th class="ptb">20:00</th>';
-      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>LAC Concert (&asymp;105mins) &raquo; Kubus</span></td>';
+      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>Live: Sound at Play (&asymp;105mins) &raquo; Roter Saal</span></td>';
       echo '</tr>'."\n";
       echo '<tr onmouseover="this.className=\'highlight\'" onmouseout="this.className=\'normal\'">';
       echo '<th class="ptb">22:00</th>';
-      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>Sound Night (&gt;3h) &raquo; Balcony/Lounge</span></td>';
+      echo '<td class="ptb'.($print?'':' active').' trC" colspan="'.$numloc.'"><span>Sound Night (&gt;3h) &raquo; Baron</span></td>';
       echo '</tr>'."\n";
     }
 
