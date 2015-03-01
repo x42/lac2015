@@ -17,7 +17,7 @@
   table_program($db,2,true);
   table_program($db,3,true);
 
-  echo '<h2 class="ptitle">Day 4 -  Sunday, May/4</h2>';
+  #echo '<h2 class="ptitle">Day 4 -  Sunday, April/12</h2>';
   # TODO extract from pages/excursion.php (include it and use print CSS?)
 ?>
 <p><br/></p>

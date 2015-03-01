@@ -1317,7 +1317,7 @@
            AND ( type=\'p\' OR location_id=\'1\')') > 0) {
 
              if ($num != 4)
-               echo '<h3 class="ptitle">Main Track (ZKM_Media Theater)</h3>';
+               echo '<h3 class="ptitle">Main Track</h3>';
         query_out($db,
          'SELECT * FROM activity
           WHERE day='.$num.'
@@ -1495,12 +1495,13 @@ if (1) {
 <p></p>
 <h3>Concerts</h3>
 <p>
-At LAC'14, there are three electro-acoustic concerts a &laquo;listening session&raquo; and a club-night.
-The electro-acoustic concerts take place in the ZKM Kubus, the listening session and club-night on the Balcony in the ZKM.
+At LAC'14, there are three electro-acoustic concerts and a club-night.
+The electro-acoustic concerts take place in the "Roter Saal", and club-night in the "Baron"
 </p>
 <p>
-All concert venues are in the ZKM building complex.
+All concert venues are within 5min walking distance of the main venue on campus. Entrance is free.
 </p>
+<!--
 <ul>
 <li>The opening concert features novel electro-acoustic compositions presented in the Kubus on Thursday 20:00h-21:00h</li>
 <li>On Friday there's a special IMA (Institute for Music and Acoustics) concert presenting works dedicated to the 3D Sound system &laquo;Zirkonium&raquo; in the Kubus 20:00h-21:40h</li>
@@ -1508,6 +1509,7 @@ All concert venues are in the ZKM building complex.
 <li>Saturday brings more electro-acoustic music with emphasis on Improvisation and Surround Sound in the Kubus, 20:00h-21:40h</li>
 <li>We'll go down in style with danceable live-music at the &laquo;Linux Sound Night&raquo;, Saturday 22:00h - open-end on the upstairs Balcony.</li>
 </ul>
+-->
 <h3>Concert Line up</h3>
 <div style="padding:.5em 1em; 0em 1em">
 <?php
