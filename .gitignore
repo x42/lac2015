@@ -7,3 +7,5 @@
 /compress.sh
 /cscope.*
 /tags
+/img/fonts/*ttf
+/img/fonts/*pk
