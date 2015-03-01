@@ -64,7 +64,7 @@
     $rv.='<td class="trl">'.track_name('trl').'</td>';
     $rv.='<td class="trp">'.track_name('trp').'</td>';
     $rv.='</tr><tr>';
-    $rv.='<td></td>';
+    $rv.='<td class="tri">'.track_name('tri').'</td>';
     $rv.='<td class="trw">'.track_name('trw').'</td>';
     $rv.='<td class="tro">'.track_name('tro').'</td>';
     $rv.='</tr>';
@@ -79,6 +79,7 @@
       case 'trp': return 'Poster Session';
       case 'trl': return 'Lightning Talk';
       case 'trw': return 'Workshop';
+      case 'tri': return 'Installation';
       case 'tro': return 'Miscellaneous';
       case 'trm': return 'Concert';
       case 'trmS': return 'Sound Night';
@@ -911,7 +912,7 @@
         echo '('.$r['duration'];
         if (empty($r['duration'])) echo '??';
         if (!strstr($r['duration'], ':')) echo ' min';
-        if ($r['type']=='i') echo ' - loop';
+        #if ($r['type']=='i') echo ' - loop';
         echo ')';
       }
       echo '&nbsp;&nbsp;<em>'; $i=0;
@@ -1355,22 +1356,17 @@
   }
 
   function print_daily_events($db, $num, $name, $details=true) {
-?>
-<h2 class="ptitle">Daily Events / Exhibitions</h2>
-<div class="ptitle"></div>
-<p>
-Art installations are exhibited at the media art space on the ZKM_Music Balcony.
-</p>
-<p>
-The exhibition is open from 14:00 to 18:00 every day of the conference.
-</p>
-<?php
-    query_out($db,
-     'SELECT * FROM activity
-      WHERE day = 5
-      AND NOT (type=\'p\' OR location_id=\'1\')
-      ORDER BY typesort(type), strftime(\'%H:%M\',starttime), location_id, serial', $details, true, true
-    );
+    /*
+      if (0) {
+        echo '<h2 class="ptitle">Installations / Exhibitions</h2>';
+        echo '<div class="ptitle"></div>';
+        query_out($db,
+          'SELECT * FROM activity
+          WHERE type=\'i\'
+          ORDER BY day, strftime(\'%H:%M\',starttime), typesort(type), location_id, serial', $details, true, true, true
+        );
+      }
+     */
   }
 
   function print_filterfields($a_users, $a_locations, $filter, $usejs=false) {
@@ -1524,12 +1520,8 @@ All concert venues are in the ZKM building complex.
 <br/>
 <h3>Installations</h3>
 <p>
-Art installations are exhibited at the media art space on the ZKM_Music Balcony.
-</p>
-<p>
-The exhibition is open from 14:00 to 18:00 every day of the conference.
-</p>
 <br/>
+</p>
 <?php
     $q='SELECT activity.* FROM activity WHERE type='.$db->quote('i');
     $q.=' ORDER BY day, strftime(\'%H:%M\',starttime), typesort(type), location_id, serial;';
@@ -1942,11 +1934,10 @@ The exhibition is open from 14:00 to 18:00 every day of the conference.
     echo 'PRODID:-//'.$config['organizaion'].'/LAC'.LACY.'//NONSGML v1.0//EN'."\r\n";
 
 # XXX hardcoded concerts
-    $result[] = array('id'=> 1000, 'day' => '1', 'starttime' => '20:00', 'duration' => '90',  'type' => 'c', 'title' => 'Opening Concert', 'abstract' => '', 'location_id' => 3, 'status' => '1');
-    $result[] = array('id'=> 1001, 'day' => '2', 'starttime' => '20:00', 'duration' => '90',  'type' => 'c', 'title' => 'IMA Concert', 'abstract' => '', 'location_id' => 3, 'status' => '1');
-    $result[] = array('id'=> 1002, 'day' => '2', 'starttime' => '22:00', 'duration' => '90',  'type' => 'c', 'title' => 'Launge / Playnight', 'abstract' => '', 'location_id' => 4, 'status' => '1');
-    $result[] = array('id'=> 1003, 'day' => '3', 'starttime' => '20:00', 'duration' => '90', 'type' => 'c', 'title' => 'LAC Concert', 'abstract' => '', 'location_id' => 3, 'status' => '1');
-    $result[] = array('id'=> 1004, 'day' => '3', 'starttime' => '22:00', 'duration' => '180',  'type' => 'c', 'title' => 'Sound Night', 'abstract' => '', 'location_id' => 4, 'status' => '1');
+    $result[] = array('id'=> 1000, 'day' => '1', 'starttime' => '20:00', 'duration' => '90',  'type' => 'c', 'title' => 'Opening Concert: Space / Landscape of Sound', 'abstract' => '', 'location_id' => 6, 'status' => '1');
+    $result[] = array('id'=> 1001, 'day' => '2', 'starttime' => '20:00', 'duration' => '90',  'type' => 'c', 'title' => 'Concert: Time / Sound Machines', 'abstract' => '', 'location_id' => 6, 'status' => '1');
+    $result[] = array('id'=> 1003, 'day' => '3', 'starttime' => '20:00', 'duration' => '90', 'type' => 'c', 'title' => 'Concert: Live / Sound at Play', 'abstract' => '', 'location_id' => 6, 'status' => '1');
+    $result[] = array('id'=> 1004, 'day' => '3', 'starttime' => '22:00', 'duration' => '180',  'type' => 'c', 'title' => 'Sound Night', 'abstract' => '', 'location_id' => 7, 'status' => '1');
 
     foreach ($result as $r) {
       if (empty($r['starttime'])) continue;

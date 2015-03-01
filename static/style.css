@@ -436,13 +436,8 @@ div.spacerTime { margin: 3em }
 .tro { background: transparent url(../img/transo.png) repeat scroll 0 0 }
 .trw { background: transparent url(../img/transw.png) repeat scroll 0 0 }
 .tr0 { background: transparent url(../img/trans3.png) repeat scroll 0 0 }
-.tr1 { background: transparent url(../img/trans5.png) repeat scroll 0 0 }
-.tr2 { background: transparent url(../img/trans7.png) repeat scroll 0 0 }
-.tr3 { background: transparent url(../img/trans3.png) repeat scroll 0 0 }
-.tr4 { background: transparent url(../img/trans4.png) repeat scroll 0 0 }
-.tr5 { background: transparent url(../img/trans1.png) repeat scroll 0 0 }
-.tr6 { background: transparent url(../img/trans6.png) repeat scroll 0 0 }
-.tr7 { background: transparent url(../img/trans2.png) repeat scroll 0 0 }
+.tri { background: transparent url(../img/trans6.png) repeat scroll 0 0 }
+
 table.legend td {
     border-top: 1px solid black;
     border-right: 1px solid black;
