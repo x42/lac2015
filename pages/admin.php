@@ -43,7 +43,7 @@ switch ($mode) {
     $r=scan_registrations();
     gen_badges_pdf($r);
     echo '<div style="height:1em;">&nbsp;</div>';
-    echo 'Download: <a href="download.php?file=lac2014badges.pdf">lac2014badges.pdf</a>';
+    echo 'Download: <a href="download.php?file=lac2015badges.pdf">lac2015badges.pdf</a>';
     break;
   case 'badgestex':
     $r=scan_registrations();
@@ -275,7 +275,7 @@ function export_sv($sep="\t") {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function gen_badges_pdf($f) {
-  $handle = fopen(TMPDIR.'lac2014badges.tex', "w");
+  $handle = fopen(TMPDIR.'lac2015badges.tex', "w");
   fwrite($handle, gen_badges_source($f));
   fclose($handle);
   @copy (DOCROOTDIR.'img/lac14badgebanner.png', TMPDIR.'badgelogo.png');
@@ -285,9 +285,9 @@ function gen_badges_pdf($f) {
   @copy (DOCROOTDIR.'img/fonts/Univers.tfm', TMPDIR.'Univers.tfm');
   @copy (DOCROOTDIR.'img/fonts/Univers.ttf', TMPDIR.'Univers.ttf');
 
-  @unlink (TMPDIR.'lac2014badges.pdf');
+  @unlink (TMPDIR.'lac2015badges.pdf');
   echo '<pre style="font-size:70%; line-height:1.2em;">';
-  system('cd '.TMPDIR.'; pdflatex lac2014badges.tex');
+  system('cd '.TMPDIR.'; pdflatex lac2015badges.tex');
   echo '</pre>';
 }
 
@@ -519,7 +519,7 @@ function badge_tex_header() {
   \\vspace*{-1mm}\\\\%
   \\image{height=11mm}{badgelogo}
   \\vspace*{0mm}\\\\%
-  {\UniversTen Linux Audio Conference 2014}
+  {\UniversTen Linux Audio Conference 2015}
   \\vspace*{5mm}\\\\%
   {#1}
   \\vspace*{2mm}\\\\%
@@ -532,7 +532,7 @@ function badge_tex_header() {
 
 \\def\\bside#1#2{
   \\begin{tabular}{rl}
-  {\\tt ESSID}:& {\\tt lac2014}\\\\
+  {\\tt ESSID}:& {\\tt lac2015}\\\\
 %  Username:& {\\tt #1}\\\\
    Password:& {\\tt #2}\\\\
   \\vspace*{0mm}\\\\%
