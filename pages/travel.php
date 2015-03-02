@@ -109,6 +109,8 @@ Line <strong>91</strong> (direction &quot;Finthen/Poststraße&quot;)
    <br />
    • &quot;Koblenzer Straße&quot; (main car entrance)
 </p>
+
+<h3>On Campus</h3>
 <p>
 Note that the <strong>Philosophicum</strong> (bus stop &quot;Friedrich-von-Pfeiffer-Weg&quot;) is where the conference takes place (lecture halls P1, P2 and P5, to the right and left of the entrance of the Philosophicum). This is also in close vicinity (5 min walking distance) of the School of Music where the concerts are.
 </p>
