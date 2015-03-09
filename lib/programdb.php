@@ -1627,8 +1627,8 @@ All concert venues are within 5min walking distance of the main venue on campus.
           $d=$c[$t];
           #if ($c['cskip'] > 0) echo 'TIME CONFLICT!! '.$t.' @'.$c['loc'].'<br/>'; // XXX really list that here in plain view for users?
           # TODO Lightning talks...
-          if ($d['starttime'] == '9:00')
-            $c['cskip']=2;
+          if ($d['starttime'] == '9:30')
+            $c['cskip']=1;
           else if (substr($d['title'],0,6) == 'LUNCH ')
             $c['cskip']=4;
           else
