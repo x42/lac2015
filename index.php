@@ -84,7 +84,7 @@
   <div id="logoright">
     <a href="https://www.facebook.com/LAC2015" rel="external"><img src="img/logos/fb-button-16x16.png" alt="find us on facebook" title="find us on facebook" /></a>
     <a href="https://plus.google.com/events/c7plph8ec1f7pvoufni3pb8sh68" rel="external"><img src="img/logos/gp-button-16x16.png" alt="google-plus event" title="google-plus event" /></a>
-  </div>
+  </div><br/><br/>
   <div id="mainmenu">
 <?php
   ### populate menu bar ##

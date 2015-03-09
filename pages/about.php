@@ -27,8 +27,9 @@ research and music production.
 <h1>Special events</h1>
 <ul>
 <li>The <strong>keynote</strong> lecture will be presented by <a href="http://ccrma.stanford.edu/~jos/" rel="external">Julius O. Smith III</a>, Professor of Music and, by courtesy, Electrical Engineering, <a href="https://ccrma.stanford.edu/" rel="external">CCRMA</a>, Stanford University.</li>
-<li>The winner of Grame's first <strong><a href="http://faust.grame.fr/index.php/component/content/article/7-news/82-faustaward" rel="external">Faust Open-Source Software Competition</a></strong> will be announced during the conference on Friday, April 10.</li>
+<li>The winner of Grame's first <strong><a href="http://faust.grame.fr/index.php/component/content/article/7-news/82-faustaward" rel="external">Faust Open-Source Software Competition</a></strong> will be announced during the conference on Saturday, April 11.</li>
 <li>The <strong>Linux Sound Night</strong> will take place on Saturday, April 11 starting 10 p.m. at the <a href="http://www.baron-mainz.de/" rel="external">Baron</a> on the university campus.</li>
+<li>On Sunday, April 12 there will be an <strong>excursion</strong> to Rüdesheim am Rhein in the lovely Rhine valley. Please check the <a href="<?=local_url('excursion')?>">Excursion</a> page for details.</li>
 </ul>
 
 <h1>Where &amp; When</h1>
@@ -36,7 +37,7 @@ research and music production.
 April 9-12 2015, JGU (<span xml:lang="de" lang="de"><a target="_blank" href="http://www.uni-mainz.de/eng/index.php" rel="external">Johannes Gutenberg-Universit&auml;t</a></span>), Mainz, Germany.
 </p>
 <p>
-Please see the <a href="<?=local_url('contact')?>">Contact</a> and <a href="<?=local_url('travel')?>">Travel</a> pages for details. We kindly ask prospective participants to <a href="registration">register</a>. The call for paper, workshop and music submissions is on the <a href="<?=local_url('participation')?>">CFP</a> page, where you can also find links to our electronic submission system. The conference main track will be streamed live and interaction will be possible via <abbr title="Internet Relay Chat">IRC</abbr> for participants who can not attend locally. Information about live coverage will be made available before the conference.
+Please see the <a href="<?=local_url('contact')?>">Contact</a> and <a href="<?=local_url('travel')?>">Travel</a> pages for details. We kindly ask prospective participants to <a href="registration">register</a>. The conference main track will be streamed live and interaction will be possible via <abbr title="Internet Relay Chat">IRC</abbr> for participants who can not attend locally. Information about live coverage will be made available before the conference.
 </p>
 <div class="ptitle">
 <img src="img/JGU.jpg" alt="JGU"/><br/>

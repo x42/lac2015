@@ -8,7 +8,8 @@
     'about' => 'About',
     'registration' => 'Registration',
     'participants' => 'Attendees',
-    'participation' => 'CFP',
+    'program'  => 'Schedule',
+    'speakers'  => 'Delegates',
     'travel' => 'Travel &amp; Stay',
     'contact' => 'Contact',
     'sponsors' => 'Supporters',
@@ -16,8 +17,7 @@
 
 # other available pages - not shown as 'tabs'
   $hidden = array(
-    'program'  => 'Schedule',
-    'speakers'  => 'Delegates',
+    'participation' => 'CFP',
     'excursion' => 'Excursion',
     'files' => 'Download',
     'profile' => 'Profile',
