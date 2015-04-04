@@ -115,12 +115,15 @@ Line <strong>91</strong> (direction &quot;Finthen/Poststraße&quot;)
 Note that the <strong>Philosophicum</strong> (bus stop &quot;Friedrich-von-Pfeiffer-Weg&quot;) is where the conference takes place (lecture halls P1, P2 and P5, to the right and left of the entrance of the Philosophicum). This is also in close vicinity (5 min walking distance) of the School of Music where the concerts are.
 </p>
 <p>
-Basically everything on the JGU campus is within walking distance. Please check the <a href="http://www.uni-mainz.de/Dateien/JGU_campus_map.pdf" rel="external">JGU Campus Map</a> (pdf) to find your way. The map also indicates the locations of the various bus stops, and the different bus lines can be found on the <a href="http://www.uni-mainz.de/Dateien/MVG_linienplan.pdf" rel="external">MGV route map</a> (pdf).
+Basically everything on the JGU campus is within walking distance. Please check the generic <a href="http://www.uni-mainz.de/Dateien/JGU_campus_map.pdf" rel="external">JGU Campus Map</a> (pdf) to find your way. The map also indicates the locations of the various bus stops, and the different bus lines can be found on the <a href="http://www.uni-mainz.de/Dateien/MVG_linienplan.pdf" rel="external">MGV route map</a> (pdf).
+</p>
+<p>
+A version of the map highlighting the various conference venues can be downloaded <a href="http://lac.linuxaudio.org/2015/download/lac2015-campus-map.pdf" rel="external">here</a> (pdf). Registered participants will also find this map along with details about restauration facilities on campus in their printed conference materials.
 </p>
 
 <h1>Getting around in Mainz</h1>
 <p>
-TBD. For the time being, please check the tourist information (see below).
+Please check the tourist information (see below).
 </p>
 
 <h3>Useful Links</h3>
