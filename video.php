@@ -73,8 +73,8 @@ if ($id > 0) {
   $height = 576;
   $pagetitle='Live Stream (HQ)';
 } else if ($id == -2) {
-  $width = 320;
-  $height = 240;
+  $width = 360;
+  $height = 288;
   $url='http://lacstreamer.stackingdwarves.net/lac2015-lq.webm';
   $pagetitle='Live Stream (LQ)';
 }
