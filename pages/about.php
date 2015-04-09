@@ -5,6 +5,13 @@ Free/Open-Source Software for music, sound and other media with GNU/Linux as the
 The 2015 edition (the 13th installment of the conference) will take place at the <em>Johannes Gutenberg University</em> (JGU) Mainz, Germany.
 </p>
 
+<h1>Live Streams</h1>
+<p>
+<div class="center" style="margin-top:.5em; margin-bottom:.-5em;"><p>During the conference, live A/V streams are available for the main track: <a href="http://lac.linuxaudio.org/2015/vid/-1" rel="external">High Quality</a> and  <a href="http://lac.linuxaudio.org/2015/vid/-2" rel="external">Low Bandwidth</a>.</p>
+<p>Remote participants are invited to join <a href="http://webchat.freenode.net/?channels=lac2015" rel="external">#lac2015 on irc.freenode.net</a>, to be able to take part in the discussions, ask questions, and get technical assistance in case of stream problems.</p><p>Conference Material can be found on the <a href="http://lac.linuxaudio.org/2015/files">Download Page</a>.</p><br/></div>
+
+<small>Direct links to the stream <a href="http://lacstreamer.stackingdwarves.net/lac2015-hq.webm">http://lacstreamer.stackingdwarves.net/lac2015-hq.webm</a>, <a href="http://lacstreamer.stackingdwarves.net/lac2015-lq.webm">http://lacstreamer.stackingdwarves.net/lac2015-lq.webm</a>.</small></p>
+
 <h1>Target audience</h1>
 <p>
 The Linux Audio Conference brings together musicians, composers, sound 
