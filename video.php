@@ -69,7 +69,7 @@ if ($id > 0) {
   $pagetitle=pdb_html_title($db, $id);
 } else if ($id == -1) {
   $url='http://lacstreamer.stackingdwarves.net/lac2015-lq.webm';
-  $width = 768;
+  $width = 720;
   $height = 576;
   $pagetitle='Live Stream (HQ)';
 } else if ($id == -2) {
@@ -109,7 +109,7 @@ if (!empty($url)) {
     .'</video>';
   }
   if ($id < 0) {
-  echo '<video width="'.$width.'" height="'.$height.'" autoplay controls tabindex="0">'
+  echo '<video width="'.$width.'" height="'.$height.'" autoplay tabindex="0">'
     .'<source type="video/webm" src="'.$url.'" />'
     .'</video>';
   }
@@ -147,7 +147,7 @@ if (!empty($url) && $id > 0) {
 }
 if (!empty($url) && $id < 0) {
   echo '<li>Video URL: ';
-  echo '<a href="'.$url.'">Live webm</a>&nbsp;';
+  echo '<a href="'.$url.'">Live webm URL</a>&nbsp;';
   echo '</li>';
 }
 echo '</ul></div>';
